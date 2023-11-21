@@ -1,0 +1,21 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.MinhasNotas" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <!-- Customize your dark theme here. -->
+        <item name="colorPrimary">@color/dark</item>
+    </style>
+
+
+    <style name="BACKGROUND">
+        <item name="android:background">@color/dark</item>
+    </style>
+
+    <style name="colorText">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="corBotao">
+        <item name="backgroundTint">@color/blue</item>
+    </style>
+
+</resources>
