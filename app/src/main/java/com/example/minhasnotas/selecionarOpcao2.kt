@@ -17,7 +17,11 @@ class selecionarOpcao2 : AppCompatActivity() {
         binding.btnSelecionar1.setOnClickListener {
             val i = Intent(this, trimestre::class.java)
             startActivity(i)
-            finish()
+        }
+
+        binding.btnSelecionar2.setOnClickListener {
+            val i = Intent(this, bimestre::class.java)
+            startActivity(i)
         }
     }
 }

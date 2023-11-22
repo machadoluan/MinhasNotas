@@ -18,27 +18,27 @@
         android:layout_marginBottom="72dp"
         android:fontFamily="@font/righteous"
         android:text="Quantos falta para passar?"
-        android:textColor="@color/white"
         android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/textView9"
+        style="@style/colorText"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView9"
+        android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
         android:fontFamily="@font/lexend"
         android:text="Diciplina:"
-        android:textColor="@color/white"
-        app:layout_constraintBottom_toTopOf="@+id/editTextText"
-        app:layout_constraintStart_toStartOf="@+id/editTextText"
+        style="@style/colorText"
+        app:layout_constraintBottom_toTopOf="@+id/input_diciplina"
+        app:layout_constraintStart_toStartOf="@+id/input_diciplina"
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
     <EditText
-        android:id="@+id/editTextText"
+        android:id="@+id/input_diciplina"
         android:layout_width="0dp"
         android:layout_height="40dp"
         android:layout_marginStart="75dp"
@@ -49,13 +49,13 @@
         android:hint="Ex: Matematica"
         android:inputType="text"
         android:paddingLeft="10dp"
-        android:textColor="@color/white"
+        style="@style/corInputs"
         android:textColorHint="@color/ColorHint"
         android:textSize="12sp"
         app:layout_constraintBottom_toTopOf="@+id/textView8"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     <!--    Nota 2 -->
 
@@ -68,10 +68,10 @@
         android:layout_marginBottom="8dp"
         android:fontFamily="@font/lexend"
         android:text="Nota 1"
-        android:textColor="@color/white"
-        app:layout_constraintBottom_toTopOf="@+id/nota1"
-        app:layout_constraintStart_toStartOf="@+id/nota1"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText" />
+        style="@style/colorText"
+        app:layout_constraintBottom_toTopOf="@+id/input_nota1"
+        app:layout_constraintStart_toStartOf="@+id/input_nota1"
+        app:layout_constraintTop_toBottomOf="@+id/input_diciplina" />
 
     <TextView
         android:id="@+id/textView10"
@@ -81,13 +81,13 @@
         android:layout_marginBottom="4dp"
         android:fontFamily="@font/lexend"
         android:text="Nota 2"
-        android:textColor="@color/white"
-        app:layout_constraintBottom_toTopOf="@+id/nota2"
-        app:layout_constraintStart_toStartOf="@+id/nota2"
-        app:layout_constraintTop_toBottomOf="@+id/nota1" />
+        style="@style/colorText"
+        app:layout_constraintBottom_toTopOf="@+id/input_nota2"
+        app:layout_constraintStart_toStartOf="@+id/input_nota2"
+        app:layout_constraintTop_toBottomOf="@+id/input_nota1" />
 
     <EditText
-        android:id="@+id/nota1"
+        android:id="@+id/input_nota1"
         android:layout_width="70dp"
         android:layout_height="40dp"
         android:layout_marginBottom="20dp"
@@ -96,15 +96,16 @@
         android:hint="Ex: 40"
         android:inputType="number"
         android:paddingLeft="10dp"
-        android:textColor="@color/ColorHint"
+        style="@style/corInputs"
         android:textSize="12sp"
+        android:maxLength="2"
         app:layout_constraintBottom_toTopOf="@+id/textView10"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView8" />
 
     <EditText
-        android:id="@+id/nota2"
+        android:id="@+id/input_nota2"
         android:layout_width="70dp"
         android:layout_height="40dp"
         android:layout_marginBottom="179dp"
@@ -112,10 +113,11 @@
         android:ems="10"
         android:hint="Ex: 70"
         android:inputType="number"
+        android:maxLength="2"
         android:paddingLeft="10dp"
-        android:textColor="@color/ColorHint"
+        style="@style/corInputs"
         android:textSize="12sp"
-        app:layout_constraintBottom_toTopOf="@+id/button4"
+        app:layout_constraintBottom_toTopOf="@+id/btn_calcular"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView10" />
@@ -126,7 +128,7 @@
     <!-- Botão-->
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/btn_calcular"
         style="@style/corBotao"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -140,7 +142,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/nota2" />
+        app:layout_constraintTop_toBottomOf="@+id/input_nota2" />
 
     <TextView
         android:id="@+id/textView12"
@@ -148,7 +150,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="59dp"
         android:text="Ex: 4,5 = 45."
-        app:layout_constraintBottom_toTopOf="@+id/button4"
+        app:layout_constraintBottom_toTopOf="@+id/btn_calcular"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -158,7 +160,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="32dp"
         android:text="Ex: 6,7 = 67."
-        app:layout_constraintBottom_toTopOf="@+id/button4"
+        app:layout_constraintBottom_toTopOf="@+id/btn_calcular"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -18,4 +18,9 @@
         <item name="backgroundTint">@color/blue</item>
     </style>
 
+    <style name="corInputs">
+        <item name="backgroundTint">@color/white</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
 </resources>

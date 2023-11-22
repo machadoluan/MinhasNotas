@@ -18,7 +18,7 @@
         android:gravity="center"
         android:layout_marginTop="60dp"
         android:text="Seja bem vindo"
-        android:textColor="@color/white"
+        style="@style/colorText"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

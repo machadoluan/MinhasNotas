@@ -18,5 +18,10 @@
         <item name="backgroundTint">@color/blue</item>
     </style>
 
+    <style name="corInputs">
+        <item name="backgroundTint">@color/dark</item>
+        <item name="android:textColor">@color/dark</item>
+    </style>
+
     <style name="Theme.MinhasNotas" parent="Base.Theme.MinhasNotas" />
 </resources>

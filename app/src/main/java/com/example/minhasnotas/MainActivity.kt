@@ -17,6 +17,7 @@ class MainActivity : AppCompatActivity() {
         binding.btnIniciar.setOnClickListener {
             val i = Intent(this, selecionarOpcao::class.java)
             startActivity(i)
+            finish()
         }
 
     }

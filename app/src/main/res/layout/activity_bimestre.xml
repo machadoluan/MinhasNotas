@@ -2,8 +2,182 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    style="@style/BACKGROUND"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".bimestre">
+
+    <TextView
+        android:id="@+id/textView1"
+        style="@style/colorText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="88dp"
+        android:fontFamily="@font/righteous"
+        android:text="Quantos falta para passar?"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/textView2"
+        style="@style/colorText"
+        android:layout_width="66dp"
+        android:layout_height="23dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/lexend"
+        android:text="Diciplina:"
+        app:layout_constraintBottom_toTopOf="@+id/input_diciplina"
+        app:layout_constraintStart_toStartOf="@+id/input_diciplina" />
+
+    <EditText
+        android:id="@+id/input_diciplina"
+        style="@style/corInputs"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="145dp"
+        android:layout_marginEnd="75dp"
+        android:layout_marginBottom="144dp"
+        android:background="@drawable/input"
+        android:ems="10"
+        android:hint="Ex: Matematica"
+        android:inputType="text"
+        android:paddingLeft="10dp"
+        android:textColorHint="@color/ColorHint"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView1" />
+
+    <EditText
+        android:id="@+id/bi_nota2"
+        style="@style/corInputs"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="120dp"
+        android:background="@drawable/input"
+        android:ems="10"
+        android:hint="Ex: 40"
+        android:inputType="number"
+        android:maxLength="2"
+        android:paddingLeft="10dp"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/bi_nota1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView4"
+        style="@style/colorText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:fontFamily="@font/lexend"
+        android:text="Nota 1"
+        app:layout_constraintBottom_toTopOf="@+id/bi_nota1"
+        app:layout_constraintStart_toStartOf="@+id/bi_nota1" />
+
+    <EditText
+        android:id="@+id/bi_nota3"
+        style="@style/corInputs"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="108dp"
+        android:layout_marginBottom="109dp"
+        android:background="@drawable/input"
+        android:ems="10"
+        android:hint="Ex: 40"
+        android:inputType="number"
+        android:maxLength="2"
+        android:paddingLeft="10dp"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/textView3"
+        style="@style/colorText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginBottom="39dp"
+        android:fontFamily="@font/lexend"
+        android:text="Nota 3"
+        app:layout_constraintBottom_toBottomOf="@+id/bi_nota3"
+        app:layout_constraintStart_toStartOf="@+id/bi_nota3" />
+
+    <EditText
+        android:id="@+id/bi_nota1"
+        style="@style/corInputs"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="118dp"
+        android:layout_marginEnd="33dp"
+        android:background="@drawable/input"
+        android:ems="10"
+        android:hint="Ex: 40"
+        android:inputType="number"
+        android:maxLength="2"
+        android:paddingLeft="10dp"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/bi_nota2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView6"
+        style="@style/colorText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="12dp"
+        android:fontFamily="@font/lexend"
+        android:text="Nota 2"
+        app:layout_constraintBottom_toTopOf="@+id/bi_nota2"
+        app:layout_constraintEnd_toEndOf="@+id/bi_nota2" />
+
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="Ex: 4,5 = 45."
+        app:layout_constraintBottom_toTopOf="@+id/textView8"
+        app:layout_constraintStart_toStartOf="@+id/textView8" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:text="Ex: 6,7 = 67."
+        app:layout_constraintBottom_toTopOf="@+id/btn_calcular"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <Button
+        android:id="@+id/btn_calcular"
+        style="@style/corBotao"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="70dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginEnd="70dp"
+        android:layout_marginBottom="48dp"
+        android:background="@drawable/background_button"
+        android:text="Calcular"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
